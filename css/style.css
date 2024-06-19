@@ -1,0 +1,349 @@
+/*HEADER*/
+.topbar{
+    display: flex;
+    color: #F6D4F5;
+    background-color: black;
+    justify-content: center;
+    padding: 7px 0;
+}
+
+header{
+    background-color:#f6d4f5;
+}
+
+.header{
+    margin: 0 10%;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/*panier*/
+.panier{
+    display: flex;
+    margin-right: 10%;
+}
+
+.panier span{
+    font-weight:bold;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+#cart{
+    margin-top: 2vh;
+    color: rgb(209, 153, 190);
+}
+/*panier*/
+
+
+
+/*navbar*/
+.nav-links ul{
+    display: flex;
+    padding-bottom: 3%;
+}
+
+.nav-links ul li{
+    width: calc(100%/5);
+}
+
+.nav-links ul li a{
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 2%;
+    color: black;
+}
+
+.navbar .nav-links ul li a:hover{
+    color: white;
+    background-color: rgb(53,50,50);
+    transition: all 0.2s ease 0s;
+}
+/*navbar*/
+
+/*HEADER*/
+
+
+
+
+
+/*Helper pour l'ombre*/
+.shadow {
+    box-shadow: 5px 5px 10px #888888;
+}
+  
+
+
+
+
+/*MAIN*/
+main{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    margin: 5vh;
+}
+
+
+/*Première image*/
+.image-container {
+    background-color: white;
+    position: relative;
+    margin-bottom: 2%;
+    padding-top: 1%;
+}
+
+.image{
+    max-width: 99%;
+}
+/*Première image*/
+
+/*Texte sur image*/
+.image-caption {
+    width: 50%;
+    background-color: rgb(246, 212, 245,0.8);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position:absolute;
+    top: 1.5%;
+    left: 1.5%;
+
+}
+
+.image-caption span{
+    font-weight: normal;
+    font-size: 80%;
+}
+/*Texte sur image*/
+
+
+/*Sélection d'escarpin*/
+#select{
+    background-color: white;
+    padding: 2vh;
+}
+
+/*Opacité de toute la section au hover*/
+#select:hover article{
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+  
+#select:hover h1{
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+/*Opacité de toute la section au hover*/
+
+
+/*"cancel" de l'opacité sur l'article au hover de l'article en question*/
+#select > .shoes > *:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+  
+
+.shoes{
+    display: flex;
+    justify-content: space-around;
+}
+/*Sélection d'escarpin*/
+
+
+
+
+/*CARDS*/
+#news{
+    display: flex;
+
+}
+
+#news article{
+    background-color: white;
+    padding:1%;
+    margin-top: 2%;
+    width: calc(100%/3);
+}
+
+#news > article > h3,small{
+    display: flex;
+    justify-content: center;
+}
+
+#news small{
+    font-family: 'Courgette',cursive;
+}
+
+.sec{
+    margin-left: 1%;
+}
+
+#new h2{
+    background-color: rgb(221, 14, 221);
+    padding: 2%;
+    color: white;
+}
+
+#best h2{
+    background-color: rgb(91, 145, 11);
+    padding: 2%;
+    color: white;
+}
+
+#crush h2{
+    background-color: rgb(22, 124, 155);
+    padding: 2%;
+    color: white;
+}
+/*MAIN*/
+
+
+
+
+
+
+/*FOOTER*/
+#info{
+    background-color: #d8a3d6;
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 0;
+}
+
+#info>article:hover small{
+    transition: all 0.2s ease;
+    color: white;
+    cursor: pointer;
+}
+
+#info article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#info article small{
+    margin-top: 8%;
+}
+
+#bottombar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F6D4F5;
+}
+
+#bottombar article{
+    text-align: center;
+}
+
+#bottombar article ul{
+    padding: 0;
+}
+
+/*FOOTER*/
+
+
+img{
+    width: 100%;
+}
+
+
+h3{
+    font-family: 'Courgette',cursive;
+}
+
+
+
+@media (max-width:640px){
+    .panier{
+        display: none;
+    }
+    .logo{
+        justify-content: center;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+
+    }
+
+    .nav-links ul li{
+        display: flex;
+        justify-content: center;
+        margin-left: 35%;
+        padding: 1% 0;
+        height: calc(100%/5);
+    }
+
+    .image{
+        margin-top: 26%;
+    }
+
+    .image-caption{
+        width: 97.5%;
+    }
+
+    #select h1{
+        text-align: center;
+        
+    }
+
+    .shoes{
+        flex-direction: column;
+    }
+    .shoes .escarpin{
+        margin-left: 20%;
+    }
+
+    .shoes .escarpin h3{
+        margin-left: 20%;
+    }
+
+    #select .shoes .escarpin img{
+        max-width: 300px;
+    }
+
+    #news{
+        display: block;
+        margin-left: 10%;
+    }
+
+    #news article{
+        width: 90%;
+    }
+
+    .sec{
+        margin: 0;
+    }
+
+    #info{
+        flex-direction: column;
+    }
+
+    #info article{
+        margin-bottom: 2%;
+    }
+
+    #info article small{
+        margin-top: 0;
+    }
+
+    #bottombar{
+        flex-direction: column;
+    }
+
+}
